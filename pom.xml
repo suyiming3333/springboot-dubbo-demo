@@ -17,8 +17,8 @@
 
     <modules>
         <module>member-service-interface</module>
-        <module>member-service-impl</module>
-        <module>order-service-impl</module>
+        <module>member-service</module>
+        <module>order-service</module>
     </modules>
 
     <properties>

@@ -6,15 +6,13 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="member-service-impl" />
+        <module name="member-service" />
         <module name="member-service-interface" />
-        <module name="order-service-impl" />
+        <module name="order-service" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="member-service-impl" target="1.8" />
-      <module name="member-service-interface" target="1.6" />
-      <module name="memberserviceinterface" target="1.5" />
+      <module name="member-service-interface" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

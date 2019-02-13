@@ -6,13 +6,15 @@
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/member-service-impl/pom.xml" />
-        <option value="$PROJECT_DIR$/order-service-impl/pom.xml" />
+        <option value="$PROJECT_DIR$/member/pom.xml" />
+        <option value="$PROJECT_DIR$/order-service/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
       <set>
         <option value="$PROJECT_DIR$/member-service-impl/pom.xml" />
         <option value="$PROJECT_DIR$/member-service-interface/pom.xml" />
+        <option value="$PROJECT_DIR$/order-service-impl/pom.xml" />
       </set>
     </option>
   </component>
