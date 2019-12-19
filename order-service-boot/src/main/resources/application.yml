@@ -4,8 +4,30 @@ server:
 
 ## dubbo相关配置
 dubbo:
+  ##应用相关配置
   application:
     name: order
+  ##注册中心配置
   registry:
     address: 127.0.0.1:2181
     protocol: zookeeper
+    ##关闭注册中心检查
+    check: false
+  ##服务暴露协议配置
+  protocol:
+    port: 29900
+    name: dubbo
+  ##监控中心配置
+  monitor:
+    protocol: registry
+  ##消费的服务都不检查
+  consumer:
+    check: false
+    ##全局消费者调用时间配置(优先)
+    timeout: 5000
+    ##调用超时重试（不包含第一次调用，重试会调用其他节点提供的服务）
+    ##幂等操作(不管执行多少次，都只有一个结果)需要设置重试，非幂等操作不用重试
+    retries: 3
+  provider:
+    ##全局提供者的超时时间配置
+    timeout: 4000
