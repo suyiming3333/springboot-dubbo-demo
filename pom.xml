@@ -19,11 +19,24 @@
         <module>member-service-interface</module>
         <module>member-service</module>
         <module>order-service</module>
+        <module>member-service-boot</module>
+        <module>order-service-boot</module>
     </modules>
 
     <properties>
-        <dubbo.version>1.0.0</dubbo.version>
         <zookeeper.version>3.4.6</zookeeper.version>
+        <springboot.version>1.5.19.RELEASE</springboot.version>
     </properties>
+
+    <!--父工程不要引入打包插件，不然所有子工程都要进行打包(工具类，公共接口等模块不需打包会报错(没有mainclass入口))-->
+    <!--<build>-->
+        <!--<plugins>-->
+            <!--<plugin>-->
+                <!--<groupId>org.springframework.boot</groupId>-->
+                <!--<artifactId>spring-boot-maven-plugin</artifactId>-->
+            <!--</plugin>-->
+        <!--</plugins>-->
+    <!--</build>-->
+
 
 </project>

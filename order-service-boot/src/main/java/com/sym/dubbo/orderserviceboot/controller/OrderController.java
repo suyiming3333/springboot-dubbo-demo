@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class OrderController {
 
 //    @Autowired
-    @Reference
+    @Reference(check = false)
     private MemberServiceI memberService;
 
     @RequestMapping("/helloDubbo")
