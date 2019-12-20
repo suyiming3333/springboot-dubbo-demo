@@ -15,7 +15,7 @@ public class OrderController {
     //不检查服务提供者，设置超时时间为2000毫秒
     //(默认取consumer的配置，如果没有配置默认是1000ms)
     //本地存根配置(先执行本地存根，在通过代理对象执行远程调用)
-    //url = "127.0.0.1:7171"指定url 绕过注册中心直连
+    //url = "dubbo://127.0.0.1:20880/com.sym.dubbo.memberservicei.MemberServiceI",指定url 绕过注册中心直连
     //loadbalance:random（默认）、roundrobin权重轮训、leaseactive最少活跃调用树、consistenhash一致性hash
     @Reference(loadbalance = "roundrobin",check = false,timeout = 5000,stub = "com.sym.dubbo.orderserviceboot.serviceImpl.MemberServiceStub")
     private MemberServiceI memberService;

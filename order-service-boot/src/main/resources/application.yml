@@ -7,6 +7,7 @@ dubbo:
   ##应用相关配置
   application:
     name: order
+    owner: corn
   ##注册中心配置
   registry:
     address: 127.0.0.1:2181

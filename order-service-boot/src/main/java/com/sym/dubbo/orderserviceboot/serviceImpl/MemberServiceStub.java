@@ -1,5 +1,6 @@
 package com.sym.dubbo.orderserviceboot.serviceImpl;
 
+
 import com.sym.dubbo.memberservicei.MemberServiceI;
 
 /**
@@ -21,6 +22,7 @@ public class MemberServiceStub implements MemberServiceI {
 
     @Override
     public String getUserNameById(int id) {
+        System.out.println("本地存根参数检查");
         if(id==10086){
             return memberService.getUserNameById(id);
         }

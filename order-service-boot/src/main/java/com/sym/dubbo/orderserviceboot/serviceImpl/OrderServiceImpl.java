@@ -12,7 +12,7 @@ import com.sym.dubbo.orderservicei.OrderServiceI;
  * @date 2019/12/19 22:10
  */
 
-@Service(version = "1.0.0")
+//@Service(version = "1.0.0")
 public class OrderServiceImpl implements OrderServiceI {
     @Override
     public String getOrderInfo(String orderId) {

@@ -21,7 +21,7 @@ class MemberController {
     @Autowired
     private MemberServiceI memberService;
 
-    @Reference(check = false,version = "1.0.0")
+//    @Reference(check = false,version = "1.0.0")
     private OrderServiceI orderService;
 
     @RequestMapping("/testMember")

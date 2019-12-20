@@ -1,15 +1,17 @@
 ##服务器配置
 server:
-  port: 7171
+  port: 7272
 
 ## dubbo相关配置
 dubbo:
   application:
     name: member
+    owner: corn
   registry:
+    ##如果直连，设置address 为N/A
     address: 127.0.0.1:2181
     protocol: zookeeper
     check: false
   protocol:
     name: dubbo
-    port: 20880
+    port: 20881
